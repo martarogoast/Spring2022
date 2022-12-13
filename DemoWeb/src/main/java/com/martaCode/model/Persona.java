@@ -28,6 +28,8 @@ public class Persona {
 	}
 	
 	//Constructores
+	public Persona() {}
+	
 	public Persona(int pCod, String pNom) {
 		codigo = pCod;
 		nombre = pNom;
