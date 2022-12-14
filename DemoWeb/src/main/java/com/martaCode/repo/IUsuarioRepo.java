@@ -6,4 +6,8 @@ import com.martaCode.model.Usuario;
 
 public interface IUsuarioRepo extends JpaRepository<Usuario, Integer>{
 
+	Usuario findByNombre(String username);
+
+	
+
 }
