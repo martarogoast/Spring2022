@@ -9,6 +9,7 @@ public class Persona {
 
 	//atributos
 	@Id
+	@Column
 	private int codigo;
 	@Column
 	private String nombre;

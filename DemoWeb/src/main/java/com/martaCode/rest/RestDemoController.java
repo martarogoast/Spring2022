@@ -35,15 +35,15 @@ public class RestDemoController {
 	
 	//TODO Arreglar
 	@PutMapping(value="/{id}")
-	public void editar (@PathVariable("id") Integer id, @RequestBody Persona pPer) {
-		Optional<Persona> personas = repo.findById(id);
-		Persona per = new Persona();
-		if(personas.isPresent()) {
-			per = personas.get();
-			per.setNombre(pPer.getNombre());
-			per.setCodigo(id);
-		}
-		repo.save(per);
+	public void editar ( @RequestBody Persona pPer) {
+//		Optional<Persona> personas = repo.findById(id);
+//		Persona per = new Persona();
+//		if(personas.isPresent()) {
+//			per = personas.get();
+//			per.setNombre(pPer.getNombre());
+//			per.setCodigo(id);
+//		}
+		repo.save(pPer);
 	}
 	
 	@DeleteMapping(value="/{id}")

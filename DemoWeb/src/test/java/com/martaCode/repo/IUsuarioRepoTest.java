@@ -20,7 +20,6 @@ class IUsuarioRepoTest {
 	@Test
 	void testAgregar() {
 		Usuario usu = new Usuario(3,"Marta Editada", encoder.encode("martita"));
-		System.out.println(encoder.encode("martita"));
 		Usuario usuRetorno = usuRepo.save(usu);
 		assertEquals(usu.getClave(), usuRetorno.getClave());
 	}
