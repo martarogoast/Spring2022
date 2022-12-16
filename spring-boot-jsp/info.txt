@@ -1,0 +1,15 @@
+Cada vez que hace un maven update, cambiar:
+Java Build path >JRE System Library a JavaSE-17
+Java Compiler -> 17
+Project Facets>Java a 17
+--------------------------------------------------
+Nuevas instalaciones dan errores porque no hay constructores. Los proporciona el lombok.
+Hay que instalarlo
+- Ir al directorio donde está el jar (En eclipse se puede ver en Maven Dependencies)
+- Abrir git bash
+- Ejecutar comando
+	java -jar lombok-1.18.24.jar
+	(sustituir lo ultimo con el nombre del jar de la versión que tengamos)
+- Se abre una ventana del Project Lombok Installer e instalarlo en el eclipse/Spring Tools Suite e instalar
+- Cuando instale, restart el Eclipse
+- Maven clean
